@@ -1,0 +1,80 @@
+* {box-sizing: border-box;}
+body {
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main {
+    width: 48%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.image {
+    width: 78%;
+    background-image: linear-gradient(to bottom right, rgb(1, 167, 151), rgb(5, 196, 178), rgb(1, 167, 151));
+    background-size: cover;
+    padding: 30px;
+    border-radius: 5px 0 0 5px;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    margin-top: 70px;
+    border-radius: 170px;
+}
+div.form {
+    width: 100%;
+    text-align: center;
+}
+input, a {margin: 8px;}
+input {
+    height: 30px;
+    width: 250px;
+    border: 1px solid gainsboro;
+    text-indent: 10px;
+}
+input.submit {
+    width: 260px;
+    height: 35px;
+    background-color: rgb(1, 167, 151);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+input.submit:hover {opacity: 0.8;}
+div.form a, #lastp {
+    color: gray;
+    text-decoration: none;
+}
+#p {
+    text-decoration: none;
+    color: black;
+}
+div.form a:hover, #p:hover {text-decoration: underline;}
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+    main {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 950px) {
+    main {
+        display: block; 
+        width: 80%;
+        justify-content: center;
+    }
+    .image {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        background-size: cover;
+    }
+    img {
+        margin-top: 30px;
+    }
+}
